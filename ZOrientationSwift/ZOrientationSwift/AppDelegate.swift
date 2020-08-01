@@ -28,7 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
         
         if (isForceLandscape) {
-            return .landscape;
+            //这里设置允许横屏的类型
+            return .landscapeRight;
         }else if (isForcePortrait){
             return .portrait;
         }
